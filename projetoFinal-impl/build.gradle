@@ -1,0 +1,4 @@
+dependencies {
+    compile project(':projetoFinal-api')
+    compile project(':projetoFinal-ejb-client')
+}
