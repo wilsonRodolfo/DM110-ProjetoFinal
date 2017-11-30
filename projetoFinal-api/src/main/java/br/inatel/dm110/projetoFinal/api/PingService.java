@@ -8,6 +8,10 @@ import javax.ws.rs.PathParam;
 public interface PingService {
 	
 	@GET
-	@Path("/{IP}/{Mask}")
+	@Path("/start/{IP}/{Mask}")
 	String scanNetwork(@PathParam("IP") String ip, @PathParam("Mask") String mask);
+	
+	@GET
+	@Path("/status/{IP}")
+	String getStatus(@PathParam("IP") String ip);
 }

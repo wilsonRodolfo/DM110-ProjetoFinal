@@ -18,4 +18,10 @@ public class PingServiceImpl implements PingService {
 		return msg;
 	}
 
+	@Override
+	public String getStatus(String ip) {
+		String msg = "<h1> " + ping.getStatus(ip) + " </h1>";
+		return msg;
+	}
+
 }
